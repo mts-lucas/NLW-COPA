@@ -1,0 +1,45 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+
+    list-style: none;
+}
+
+body {
+
+    background-color: black ;
+    background-image: url("./assets/bg.svg");
+    background-position-x: center;
+    background-position-y: center;
+}
+
+#app {
+    width: fit-content;
+    margin: 52px auto;
+}
+
+header {
+
+    margin-bottom: 63px;
+    
+}
+
+.card {
+    padding: 32px 23px;
+    text-align: center;
+    border-radius: 6px;
+    border-bottom: 2px solid yellowgreen;
+    background: rgb(12, 15, 13);
+}
+
+.card h2 {
+
+    padding: 8px 16px;
+    border: 1px solid green;
+    border-radius: 6px;
+}

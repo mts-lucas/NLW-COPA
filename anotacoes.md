@@ -27,3 +27,14 @@ src é o source ou seja o caminho para aquela imagem, pode ser link ou diretorio
 - Titulos
 
 `<h1> Titulo </h1>`
+
+# CSS
+
+### Declaração
+
+Pedaço de codigo que que dita as propriedades e valores a serem aplicados a um elemento html
+
+` body {parametros dos meu elemento, cor e etc;} `
+
+Segue o sistema de castaca, ou seja se tiver dois comandos de mesmo tipo o que consta é o ultimo, porem cada seletor ter pesos.
+
