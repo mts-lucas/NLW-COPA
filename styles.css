@@ -39,7 +39,13 @@ header {
 
 .card h2 {
 
+    display: flex;
+    gap: 16px;
+    justify-content: center;
     padding: 8px 16px;
     border: 1px solid green;
     border-radius: 6px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 53px;
 }
