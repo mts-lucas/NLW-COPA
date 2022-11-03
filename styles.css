@@ -18,6 +18,11 @@ body {
     background-position-y: center;
 }
 
+body * {
+
+    font-family: 'Roboto', sans-serif;
+}
+
 #app {
     width: fit-content;
     margin: 52px auto;
@@ -48,4 +53,43 @@ header {
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 53px;
+    align-items: center;
+
+    color: rgb(243, 243, 77);
+}
+
+.card h2 span {
+
+    color: azure;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card ul li {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+
+
+.card ul li + li {
+
+    padding-top: 24px;
+    border-top: 1px solid rgb(54, 54, 54);
+}
+
+.card ul li strong {
+
+    font-weight: 900;
+    font-size: 36px;
+    color: azure;
 }
