@@ -34,6 +34,13 @@ header {
     
 }
 
+#cards {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 .card {
     padding: 32px 23px;
     text-align: center;
