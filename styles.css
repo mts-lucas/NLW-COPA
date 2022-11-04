@@ -5,6 +5,22 @@
     box-sizing: border-box;
 }
 
+:root {
+
+    --card-title-border--color: green;
+    --card--color-primary: yellowgreen; 
+    --card--background-color: rgb(12, 15, 13);
+    --card--date-color: rgb(243, 243, 77);
+}
+
+body.blue {
+
+    --card-title-border--color: #338AF3;
+    --card--color-primary: #338AF3; 
+    --card--background-color: #040b14;
+
+}
+
 ul {
 
     list-style: none;
@@ -13,7 +29,7 @@ ul {
 body {
 
     background-color: black ;
-    background-image: url("./assets/bg.svg");
+    background-image: url("./assets/bg-blue.svg");
     background-position-x: center;
     background-position-y: center;
 }
@@ -31,6 +47,7 @@ body * {
 header {
 
     margin-bottom: 63px;
+    text-align: center;
     
 }
 
@@ -45,8 +62,8 @@ header {
     padding: 32px 23px;
     text-align: center;
     border-radius: 6px;
-    border-bottom: 2px solid yellowgreen;
-    background: rgb(12, 15, 13);
+    border-bottom: 2px solid var(--card--color-primary);
+    background: var(--card--background-color);
 }
 
 .card h2 {
@@ -55,14 +72,14 @@ header {
     gap: 16px;
     justify-content: center;
     padding: 8px 16px;
-    border: 1px solid green;
+    border: 1px solid var(--card-title-border--color);
     border-radius: 6px;
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 53px;
     align-items: center;
 
-    color: rgb(243, 243, 77);
+    color: var(--card--date-color);
 }
 
 .card h2 span {
@@ -115,6 +132,13 @@ header {
    transition: transform 0.5s;
 }
 
+.card {
+
+    opacity: 0;
+    animation: appear .2s forwards;
+}
+
+
 @keyframes appear {
 
     0% {
@@ -128,4 +152,16 @@ header {
         opacity: 1;
 
     }
+}
+
+@media (min-width: 700px) {
+
+    #cards {
+
+        max-width: 670px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
 }
