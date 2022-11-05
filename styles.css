@@ -7,10 +7,11 @@
 
 :root {
 
-    --card-title-border--color: green;
+    --card-title-border--color: yellowgreen;
     --card--color-primary: yellowgreen; 
     --card--background-color: rgb(12, 15, 13);
     --card--date-color: rgb(243, 243, 77);
+    --bg: url("./assets/bg-yellow.svg");
 }
 
 body.blue {
@@ -18,7 +19,16 @@ body.blue {
     --card-title-border--color: #338AF3;
     --card--color-primary: #338AF3; 
     --card--background-color: #040b14;
+    --bg: url("./assets/bg-blue.svg");
 
+}
+
+body.green {
+
+    --card-title-border--color: #047c3f;
+    --card--color-primary: #047c3f; 
+    --card--background-color: #02180d;
+    --bg: url("./assets/bg-green.svg");
 }
 
 ul {
@@ -29,9 +39,10 @@ ul {
 body {
 
     background-color: black ;
-    background-image: url("./assets/bg-blue.svg");
-    background-position-x: center;
-    background-position-y: center;
+    background-image: var(--bg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body * {
