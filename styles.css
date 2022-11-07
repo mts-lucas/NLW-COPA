@@ -65,7 +65,7 @@ header {
 #cards {
 
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 32px;
 }
 
@@ -169,7 +169,7 @@ header {
 
     #cards {
 
-        max-width: 670px;
+        max-width: 1080px;
         flex-direction: row;
         flex-wrap: wrap;
     }
